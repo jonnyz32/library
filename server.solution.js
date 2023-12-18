@@ -24,12 +24,12 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors(corsOptions))
 
-
+// "mysql-1f6f73c3-jonnyzak32-0f32.a.aivencloud.com"
 const connection = mysql.createConnection({
-  host: "mysql-1f6f73c3-jonnyzak32-0f32.a.aivencloud.com",
-  user: "avnadmin",
-  password: "AVNS_q5n7YDQ8kX83-Tw4mwO",
-  database: "library",
+  host: process.env.host,
+  user: process.env.user,
+  password: process.env.password,
+  database: process.env.database,
   port: 25141
 });
 
