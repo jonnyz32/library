@@ -7,7 +7,7 @@ const AuthorList = () => {
   useEffect(() => {
     const fetchAuthors = async () => {
       try {
-        const response = await fetch('http://localhost:3000/authors');
+        const response = await fetch('/authors');
         const data = await response.json();
         setAuthors(data);
       } catch (error) {

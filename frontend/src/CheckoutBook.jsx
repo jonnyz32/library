@@ -7,7 +7,7 @@ const CheckoutBook = () => {
 
   const handleCheckout = async () => {
     try {
-      const response = await fetch('http://localhost:3000/transactions/check-out', {
+      const response = await fetch('/transactions/check-out', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -6,7 +6,7 @@ const ReturnBook = () => {
 
   const handleReturn = async () => {
     try {
-      const response = await fetch('http://localhost:3000/transactions/return', {
+      const response = await fetch('/transactions/return', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
